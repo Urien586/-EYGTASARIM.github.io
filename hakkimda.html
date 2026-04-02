@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda | EYG Tasarım</title>
+    <style>
+        html, body { height: 100%; margin: 0; padding: 0; }
+        body { display: flex; flex-direction: column; font-family: 'Segoe UI', sans-serif; background: #f4f7f6; }
+        header { background: #2c3e50; padding: 10px 0; }
+        nav { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo-img { height: 50px; width: auto; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 600; }
+
+        main { flex: 1 0 auto; max-width: 1100px; margin: 60px auto; padding: 20px; width: 100%; box-sizing: border-box; }
+        .about-wrap { display: flex; gap: 50px; align-items: center; flex-wrap: wrap; background: white; padding: 45px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .about-images { flex: 1; display: flex; gap: 20px; min-width: 320px; }
+        .about-images img { width: 50%; height: 380px; object-fit: cover; border-radius: 12px; }
+        .about-text { flex: 1.2; min-width: 320px; }
+        .about-text h2 { color: #2c3e50; font-size: 2.2rem; margin-bottom: 20px; border-bottom: 5px solid #3498db; display: inline-block; padding-bottom: 5px; }
+        .about-text p { font-size: 1.15rem; line-height: 1.8; color: #444; }
+
+        footer { flex-shrink: 0; background: #2c3e50; color: white; text-align: center; padding: 25px; }
+        @media (max-width: 768px) { nav { flex-direction: column; gap: 15px; } .about-wrap { padding: 25px; } .about-images img { height: 260px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="src/eyglogo.png" alt="Logo" class="logo-img"></a>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
+                <li><a href="hakkimda.html">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="about-wrap">
+            <div class="about-images">
+                           </div>
+            <div class="about-text">
+                <h2>İki Kişilik Dev Kadro</h2>
+                <p>Biz, butik hizmet veren iki kişilik uzman bir ekibiz. Her projemize tutkuyla yaklaşıyor, doğrudan iletişimle en verimli sonuçları alıyoruz.</p>
+                <p>Karmaşık süreçleri bir kenara bırakıp sadece sizin hedeflerinize odaklanıyoruz.</p>
+            </div>
+        </div>
+    </main>
+    <footer>&copy; 2026 EYG Tasarım</footer>
+</body>
+</html>

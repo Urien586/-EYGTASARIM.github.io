@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>EYG Tasarım | Anasayfa</title>
+    <style>
+        /* TEMEL YAPI */
+        html, body { height: 100%; margin: 0; padding: 0; overflow-x: hidden; }
+        body { display: flex; flex-direction: column; font-family: 'Segoe UI', Tahoma, sans-serif; background: #f4f7f6; color: #333; }
+        
+        /* HEADER & LOGO */
+        header { background: #2c3e50; padding: 10px 0; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.2); position: sticky; top: 0; z-index: 1000; }
+        nav { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo-link { display: flex; align-items: center; text-decoration: none; }
+        .logo-img { height: 50px; width: auto; object-fit: contain; }
+        
+        nav ul { display: flex; list-style: none; gap: 25px; margin: 0; padding: 0; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: 0.3s; }
+        nav ul li a:hover { color: #3498db; }
+
+        /* HERO ALANI */
+        main { 
+            flex: 1 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), 
+            url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            padding: 60px 20px;
+        }
+        .hero-text h1 { font-size: clamp(2.2rem, 8vw, 4rem); margin-bottom: 20px; text-shadow: 2px 2px 15px rgba(0,0,0,0.5); }
+        .hero-text p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; }
+        .btn { display: inline-block; background: #3498db; color: white; padding: 16px 40px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: 0.3s; border: 2px solid #3498db; }
+        .btn:hover { background: transparent; color: #3498db; transform: translateY(-3px); }
+
+        /* FOOTER */
+        footer { flex-shrink: 0; background: #2c3e50; color: white; text-align: center; padding: 25px; border-top: 4px solid #3498db; font-size: 0.9rem; }
+        
+        @media (max-width: 768px) { 
+            nav { flex-direction: column; gap: 15px; } 
+            .logo-img { height: 40px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <img src="src/eyglogo.png" alt="EYG Tasarım" class="logo-img">
+            </a>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
+                <li><a href="hakkimda.html">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-text">
+            <h1>Geleceği Birlikte Tasarlayalım</h1>
+            <p>EYG Tasarım ile markanızı dijital dünyada bir adım öne taşıyın.</p>
+            <a href="hizmetler.html" class="btn">Neler Yapıyoruz?</a>
+        </div>
+    </main>
+    <footer>&copy; 2026 EYG Tasarım Atölyesi</footer>
+</body>
+</html>

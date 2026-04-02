@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz | EYG Tasarım</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        html, body { height: 100%; margin: 0; padding: 0; }
+        body { display: flex; flex-direction: column; font-family: 'Segoe UI', sans-serif; background: #f4f7f6; }
+        header { background: #2c3e50; padding: 10px 0; }
+        nav { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo-img { height: 50px; width: auto; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 600; }
+
+        main { flex: 1 0 auto; max-width: 1100px; margin: 50px auto; padding: 20px; width: 100%; box-sizing: border-box; }
+        .title { font-size: 2.2rem; color: #2c3e50; border-left: 6px solid #3498db; padding-left: 15px; margin-bottom: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06); 
+            border-bottom: 5px solid #3498db; 
+            transition: 0.3s;
+            text-align: center; /* İkonlar ortalı dursun diye ekledim */
+        }
+        
+        .card:hover { transform: translateY(-8px); }
+        
+        /* İkon Stili */
+        .card i {
+            font-size: 3rem;
+            color: #3498db;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .card h3 { margin-bottom: 15px; color: #2c3e50; font-size: 1.5rem; }
+        .card p { color: #555; line-height: 1.6; }
+        
+        footer { flex-shrink: 0; background: #2c3e50; color: white; text-align: center; padding: 25px; }
+        @media (max-width: 768px) { nav { flex-direction: column; gap: 15px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="src/eyglogo.png" alt="Logo" class="logo-img"></a>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
+                <li><a href="hakkimda.html">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="title">Hizmetlerimiz</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-bezier-curve"></i>
+                <h3>Web Tasarım</h3>
+                <p>Kullanıcı deneyimi yüksek, estetik ve modern arayüz tasarımları hazırlıyoruz.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Yazılım Çözümleri</h3>
+                <p>İhtiyacınıza özel, hızlı ve güvenli web tabanlı sistemler geliştiriyoruz.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Marka Kimliği</h3>
+                <p>Dijital dünyadaki duruşunuzu güçlendirecek stratejik dokunuşlar yapıyoruz.</p>
+            </div>
+        </div>
+    </main>
+<footer>&copy; 2026 EYG Tasarım</footer>
+</body>
+</html>
