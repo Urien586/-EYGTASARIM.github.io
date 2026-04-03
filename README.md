@@ -1,1 +1,0 @@
-# -EYGTASARIM.github.io
